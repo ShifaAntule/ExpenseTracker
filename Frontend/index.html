@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Expense Tracker</h2>
+
+        <div class="income-input-container">
+            <label for="income">Enter Monthly Income:</label>
+            <input type="number" id="income" placeholder="Enter income">
+            <button id="set-income">Set Income</button>
+        </div>
+
+        <div class="balance-container">
+            <h3>Balance: <span id="balance">$0</span></h3>
+        </div>
+
+        <div id="income-expense">
+            <div class="income-box">
+                <p>Income</p>
+                <span id="income-amount">$0</span>
+            </div>
+            <div class="expense-box">
+                <p>Expense</p>
+                <span id="expense-amount">$0</span>
+            </div>
+        </div>
+
+        <h3>Add Transaction</h3>
+        <div class="transaction-form">
+            <label>Description:</label>
+            <input type="text" id="desc" placeholder="Enter description">
+            
+            <label>Amount:</label>
+            <input type="number" id="amount" placeholder="Enter amount">
+            
+            <button id="add-btn">Add Transaction</button>
+        </div>
+
+        <h3>Transaction History</h3>
+        <button id="show-history">Show Transaction History</button>
+        <ul id="transaction-list"></ul>
+
+        <!-- ✅ Clear Transactions Button -->
+        <button id="clear-transactions">Clear All Transactions</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
